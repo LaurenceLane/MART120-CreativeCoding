@@ -1,0 +1,66 @@
+<html>
+
+    <title>Page 3</title>
+<head>
+
+    <script>
+        function CheckTOS()
+        {
+            if(form.terms.checked){
+                alert("Please Agree to the Terms and Conditions.")
+                form.terms.focus();
+                return false;
+            }
+            return true
+         }
+         
+        function Checkboxes()
+        {
+            var Name = document.getElementById("txtName").value;
+            if(Name == "")
+            {
+                document.getElementById("txtName").focus();
+                document.getElementById("txtName").style.backgroundColor = "red";
+                document.getElementById("txtNameMessage").innerHTML = "* Required";
+                document.getElementById("txtNameMessage").style.color = "red";
+                
+                return false;
+            }
+            var Email = document.getElementById("txtEmail").value;
+            if(Email == "")
+            {
+                document.getElementById("txtEmail").focus();
+                document.getElementById("txtEmail").style.backgroundColor = "red";
+                document.getElementById("txtEmailMessage").innerHTML = "* Required";
+                document.getElementById("txtEmailMessage").style.color = "red";
+                
+
+                return false;
+            }
+         }
+        function getData()
+            {
+                var Name = document.getElementById("txtName").value;
+                var Email = document.getElementById("txtEmail").value;
+                window.alert("Name: " +  Name + " Email: " + Email);
+             }
+    </script>
+</head>
+<body>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S81n" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="External.css">
+   <h1><p>Contact Me!</p></h1>
+    <form>
+        <p>Name: <input type="text" id="txtName"></p>
+        <p>Email: <input type="text" id="txtEmail"></p>
+        <p><input type="checkbox" id="ToS" name="ToS">
+       <label for="ToS"> I agree to the Terms and Conditions</label><br></p>
+        <p></td><button id="Submit" onClick="getData"><i class="bi bi-box2-heart"></i> Submit</button></p>
+    </form>
+    <br>
+    <p><a href="Homepage.html" id="specificLink" target="_new">Homepage</a></p>
+    <p><a href="SecondPage.html" id="specificLink" target="_new">Page 2</a></p>
+    
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+  span{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    color: rgb(148, 166, 115);
+  text-align: center;
+  }
+  span.KO {
+    color:rgb(119, 183, 132);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, 'Lucida Sans', Arial, sans-serif;
+    background-color:rgba(50, 50, 50, 0);
+    text-align: justify;
+    font-size: 24px;
+  }
+  #specificLink {
+    color:rgb(187, 108, 66);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+  }
+
+  .container .toggle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45px;
+    height: 25px;
+    background: rgb(253, 215, 239);
+    border-radius: 15px;
+  }
+  .container .toggle .toggle-button{
+    position: absolute;
+    top: 2.5px;
+    left: 2.5px;
+    width: 20px;
+    height: 20px;
+    background: rgb(39, 47, 63);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  #submit {
+    background-color:rgb(111, 245, 187); 
+    border: none;
+    color: rgb(70, 63, 63);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+    font-size: 16px;
+    transition-duration: 0.4s;
+  }
+  #submit:hover {
+    background-color:rgb(91, 187, 155)
+  }
+  p 
+  {text-align: center;
+  }
+
+  #Contact{
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    font-size: 20px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+  }
+ 
+
+
+
+  Icons
+  <i class="bi bi-box2-heart"></i>
+  <i class="bi bi-chat-text-fill"></i>
+  <i class="bi bi-chat-text"></i>
+
+
+  rgb(251, 210, 97);
