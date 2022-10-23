@@ -1,0 +1,88 @@
+<html>
+
+    <title>Page 3</title>
+<head>
+    <link rel="stylesheet" type="text/css" href="External.css">
+       
+</script>
+    <script>
+
+        function CheckTOS()
+        {
+            if(ToS.checked == ""){
+                document.getElementById("ToS").focus();
+                document.getElementById("ToSReq").style.color = "rgb(255, 172, 193)";
+                document.getElementById("ToSReq").style.color = "rgb(255, 172, 193)";
+
+                document.getElementById("ToSReq").style.display = "block"   
+               
+                return false;
+            }
+            document.getElementById("ToSReq").style.display = "none"
+            return true
+         }
+         
+         
+        
+         function CheckEmail()
+        {var Email = document.getElementById("txtEmail").value;
+            if(Email == "")
+            {
+                document.getElementById("txtEmail").focus();
+                document.getElementById("txtEmail").style.backgroundColor = "rgb(255, 172, 193)";
+                document.getElementById("txtEmailMessage").innerHTML = "* Required";
+                document.getElementById("txtEmailMessage").style.color = "rgb(255, 172, 193)";
+            
+
+                return false;
+            }
+         }
+        function CheckName()
+        {
+            var Name = document.getElementById("txtName").value;
+            if(Name == "")
+            {
+                document.getElementById("txtName").focus();
+                document.getElementById("txtName").style.backgroundColor = "rgb(255, 172, 193)";
+                document.getElementById("txtNameMessage").innerHTML = "* Required";
+                document.getElementById("txtNameMessage").style.color = "rgb(255, 172, 193)";
+                
+                return false;
+            }
+        }
+
+        function getData()
+            {
+                var Name = document.getElementById("txtName").value;
+                var Email = document.getElementById("txtEmail").value;
+                window.alert("Name: " +  Name + " Email: " + Email);
+             }
+
+             
+
+    </script>
+</head>
+<body >
+    <style>
+  #ToSReq{
+    display: none;
+  }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S81n" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="External.css">
+   <h1><p>Contact Me!</p></h1>
+    <table>
+        <p>Name: <input type="text" id="txtName">&nbsp;<span id="txtNameMessage"></span></p>
+        <p>Email: <input type="text" id="txtEmail">&nbsp;<span id="txtEmailMessage"></span></p>
+        <p><input type="checkbox" id="ToS" name="ToS">
+       <label for="ToS"> I agree to the Terms and Conditions</label>
+     <div id="ToSReq" style="text-align: center">*Agreeing to the Terms of Service is Required</div>
+        <p></td><button id="Submit" onClick="CheckName();CheckEmail();CheckTOS();"><i class="bi bi-box2-heart"></i> Submit</button></p>
+    </table>
+    <br>
+    <p><a href="Homepage.html" id="specificLink" target="_new">Homepage</a></p>
+    <p><a href="SecondPage.html" id="specificLink" target="_new">Page 2</a></p>
+
+</body>
+
+</html>
